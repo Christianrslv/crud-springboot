@@ -12,13 +12,13 @@ import java.util.UUID;
 @RequestMapping("/user")
 public class UserController {
 
-    @GetMapping
-    public ResponseEntity<UserModelViewDTO> getUser() {
-        return ResponseEntity.ok(UserModelViewDTO.builder()
-                        .id(UUID.randomUUID())
-                        .name("Anonimous Fulanous")
-                        .email("fulanous@anonimous.com")
-                        .telephone("00999810293")
-                .build());
-    }
+  @GetMapping
+  public ResponseEntity<UserModelViewDTO> getUser() {
+    return ResponseEntity.ok(UserModelViewDTO.builder()
+        .id(UUID.randomUUID())
+        .name("Christian Teste")
+        .email("fulanous@anonimous.com")
+        .telephone("00999810293")
+        .build());
+  }
 }
