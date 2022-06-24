@@ -16,7 +16,7 @@ public class UserController {
   public ResponseEntity<UserModelViewDTO> getUser() {
     return ResponseEntity.ok(UserModelViewDTO.builder()
         .id(UUID.randomUUID())
-        .name("Christian Teste")
+        .name("Alterado")
         .email("fulanous@anonimous.com")
         .telephone("00999810293")
         .build());
